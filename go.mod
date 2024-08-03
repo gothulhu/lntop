@@ -1,14 +1,16 @@
 module github.com/edouardparis/lntop
 
-go 1.22.2
+go 1.21.4
+
+toolchain go1.22.5
 
 require (
 	github.com/BurntSushi/toml v0.3.1
 	github.com/awesome-gocui/gocui v1.1.0
-	github.com/gofrs/uuid v4.4.0+incompatible
-	github.com/gookit/color v1.5.4
-	github.com/lightningnetwork/lnd v0.18.0-beta.rc1
-	github.com/mattn/go-runewidth v0.0.15
+	github.com/gofrs/uuid v4.2.0+incompatible
+	github.com/gookit/color v1.5.2
+	github.com/lightningnetwork/lnd v0.18.2-beta
+	github.com/mattn/go-runewidth v0.0.13
 	github.com/pkg/errors v0.9.1
 	go.uber.org/zap v1.17.0
 	golang.org/x/text v0.14.0
@@ -24,13 +26,13 @@ require (
 	github.com/aead/chacha20 v0.0.0-20180709150244-8b13a72661da // indirect
 	github.com/aead/siphash v1.0.1 // indirect
 	github.com/beorn7/perks v1.0.1 // indirect
-	github.com/btcsuite/btcd v0.24.2-beta.rc1.0.20240403021926-ae5533602c46 // indirect
+	github.com/btcsuite/btcd v0.24.2 // indirect
 	github.com/btcsuite/btcd/btcec/v2 v2.3.3 // indirect
 	github.com/btcsuite/btcd/btcutil v1.1.5 // indirect
 	github.com/btcsuite/btcd/btcutil/psbt v1.1.8 // indirect
 	github.com/btcsuite/btcd/chaincfg/chainhash v1.1.0 // indirect
 	github.com/btcsuite/btclog v0.0.0-20170628155309-84c8d2346e9f // indirect
-	github.com/btcsuite/btcwallet v0.16.10-0.20240404104514-b2f31f9045fb // indirect
+	github.com/btcsuite/btcwallet v0.16.10-0.20240706055350-e391a1c31df2 // indirect
 	github.com/btcsuite/btcwallet/wallet/txauthor v1.3.4 // indirect
 	github.com/btcsuite/btcwallet/wallet/txrules v1.2.1 // indirect
 	github.com/btcsuite/btcwallet/wallet/txsizes v1.2.4 // indirect
@@ -87,7 +89,7 @@ require (
 	github.com/jonboulle/clockwork v0.2.2 // indirect
 	github.com/jrick/logrotate v1.0.0 // indirect
 	github.com/json-iterator/go v1.1.11 // indirect
-	github.com/juju/clock v1.0.3 // indirect
+	github.com/juju/clock v1.1.1 // indirect
 	github.com/juju/errors v1.0.0 // indirect
 	github.com/juju/loggo v1.0.0 // indirect
 	github.com/juju/testing v1.0.2 // indirect
@@ -163,7 +165,7 @@ require (
 	golang.org/x/crypto v0.22.0 // indirect
 	golang.org/x/exp v0.0.0-20240325151524-a685a6edb6d8 // indirect
 	golang.org/x/mod v0.16.0 // indirect
-	golang.org/x/net v0.22.0 // indirect
+	golang.org/x/net v0.24.0 // indirect
 	golang.org/x/sys v0.19.0 // indirect
 	golang.org/x/term v0.19.0 // indirect
 	golang.org/x/time v0.3.0 // indirect
@@ -187,6 +189,4 @@ require (
 	sigs.k8s.io/yaml v1.2.0 // indirect
 )
 
-// We want to format raw bytes as hex instead of base64. The forked version
-// allows us to specify that as an option.
 replace google.golang.org/protobuf => github.com/lightninglabs/protobuf-go-hex-display v1.30.0-hex-display
